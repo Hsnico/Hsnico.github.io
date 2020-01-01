@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      "Example Post"
 subtitle:   "非常水的自我笔记"
@@ -6,6 +7,7 @@ author:     "Hsnico"
 header-img: "img/post-bg-2020.jpg"
 tags:
     - 生活
+---
 
 # HelloWorld
 
