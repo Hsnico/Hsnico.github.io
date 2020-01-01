@@ -1,0 +1,12 @@
+layout:     post
+title:      "Example Post"
+subtitle:   "非常水的自我笔记"
+date:       2020-01-01
+author:     "Hsnico"
+header-img: "img/post-bg-2020.jpg"
+tags:
+    - 生活
+
+# HelloWorld
+
+第一篇博客,要赶在新年第一天来着
