@@ -1,1 +1,1 @@
-#Powered by Jekyll • HuxBlog Boilerplate
+# Powered by Jekyll •  HuxBlog Boilerplate
