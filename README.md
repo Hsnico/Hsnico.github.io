@@ -1,1 +1,1 @@
-# huxpro.github.io
+#Powered by Jekyll •  HuxBlog Boilerplate
