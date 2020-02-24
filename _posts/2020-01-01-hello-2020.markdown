@@ -1,0 +1,25 @@
+---
+layout:     post
+<<<<<<< HEAD:_posts/2020-01-01-hello-2020-HelloWorld.markdown
+title:      "First Post"
+=======
+title:      "Example Post"
+>>>>>>> 7dda627b6341c54b10369559f63da41da7cad25e:_posts/2020-01-01-hello-2020.markdown
+subtitle:   "非常水的自我笔记"
+date:       2020-01-01
+author:     "Hsnico"
+header-img: "img/post-bg-2020.jpg"
+tags:
+    - 生活
+<<<<<<< HEAD:_posts/2020-01-01-hello-2020-HelloWorld.markdown
+
+# HelloWorld
+
+第一篇博客,要赶在2020年第一天来着
+=======
+---
+
+# HelloWorld
+
+第一篇博客,要赶在2020年第一天来着
+>>>>>>> 7dda627b6341c54b10369559f63da41da7cad25e:_posts/2020-01-01-hello-2020.markdown
