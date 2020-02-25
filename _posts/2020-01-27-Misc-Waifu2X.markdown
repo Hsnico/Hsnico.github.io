@@ -49,11 +49,11 @@ Anime4k 的优点就是速度快，能做到实时，搭配 MPV 看视频还是�
 + 拆分256
 
 #### 原图
-![](../img/posts/20200127/DXqemzIW0AANHGK.jpg)
+![](/img/posts/20200127/DXqemzIW0AANHGK.jpg)
 
 #### 处理后局部放大
 
-![](../img/posts/20200127/140305.jpg)
+![](/img/posts/20200127/140305.jpg)
 
 Photoshop 自带的算法耗时最短，但是效果也最差
 

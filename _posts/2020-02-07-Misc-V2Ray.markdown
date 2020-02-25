@@ -34,13 +34,13 @@ Shadowsocks 和 V2Ray 的主要区别就是一个是加密流量，另一个是�
 ### V2Ray服务端搭建
 
 SSH 连接用的是 MobaXterm ，由于我的服务器被移动神秘加成了，导致连接各种不稳定，电信和联通就没有这种问题。还好 MobaXterm 支持设置代理才解决了连接的问题。
-![Socks5代理](../img/posts/20200207/000537.jpg)
+![Socks5代理](/img/posts/20200207/000537.jpg)
 
 服务器装的是 CentOS 7
 安装为了图方便直接用了现成的一键脚本
 ```wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh '```
 
-![](../img/posts/20200207/003210.jpg)
+![](/img/posts/20200207/003210.jpg)
 这边选择 安装 V2Ray (Nginx+ws+tls)
 安装过程很简单，直接一路 yes 即可
 中途会让你输入域名，把刚刚注册的域名填进去就行。
@@ -52,7 +52,7 @@ SSH 连接用的是 MobaXterm ，由于我的服务器被移动神秘加成了�
 ### 客户端
 Windows 推荐使用 V2RayN ,直接导入 Vmess 链接即可，Android 端使用 V2RayNG ，iOS 端使 用 Shadowrocket 或 Quantumult ，但是这两个软件获取有一定门槛。
 个人更喜欢用 Clash 但配置起来稍稍麻烦，并且没有汉化。
-![Clash](../img/posts/20200207/015959.jpg)
+![Clash](/img/posts/20200207/015959.jpg)
 
 
 ### 加速
@@ -63,7 +63,7 @@ Windows 推荐使用 V2RayN ,直接导入 Vmess 链接即可，Android 端使用
 ### 一些小问题
 #### 连接速度
 连接的速度在不同时间段会有一些差异，在用网的高峰期会慢很多，实测在凌晨的速度与在白天的速度有好几倍的差距。
-![连接速度](../img/posts/20200207/020416.jpg)
+![连接速度](/img/posts/20200207/020416.jpg)
 这个是 QOS 限速，因为普通用户的流量优先级较低，所以出口流量会被限速，没法避免。解决方法就是用国内中转服务器走 BGP 线路，IPLC 专线，但是价格会贵很多。
 
 自己有台阿里云的国内服务器，本来想用来做中转，但是想了想这 1Mbps 的小水管还是算了吧，国内的带宽真的太贵了。

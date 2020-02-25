@@ -20,7 +20,7 @@ Windows 1903 之前用的一直是 Windows 10 的深色模式，因为当时并�
 ### 软件
 
 和我有同样想法的人果然是有的，而且还不少，找了一圈之后在 GitHub 上看到了一个叫 [Windows Auto Dark Mode][WADM] 的项目
-![Auto Dark Mode](../img/posts/20200217/023220.jpg)
+![Auto Dark Mode](/img/posts/20200217/023220.jpg)
 支持中文,支持自定义时间段切换主题和壁纸,并且不占用后台，因为是用 Windows 自带的任务计划实现的
 
 Windows 界面解决了,接下来要解决 Chrome 的问题了
@@ -35,7 +35,7 @@ Chrome 其实自带一个强制深色模式，不过藏在了实验功能里，�
 
 这般我使用的插件是 [Dark Reader][DR] ，这款插件的体验还是很棒的，绝大部分网页都能完美适配，并且支持自定义的规则。如果你懂一些 CSS 方面的知识就可以自定义网站的样式。
 
-![Dark Reader](../img/posts/20200217/025053.jpg)
+![Dark Reader](/img/posts/20200217/025053.jpg)
 
 这个插件有一个很好用选项叫 `使用系统的配色方案` ，配合 Windows Auto Dark Mode 可以很好地实现在 Windows 下到点自动切换深色模式
 
@@ -51,7 +51,7 @@ Chrome 其实自带一个强制深色模式，不过藏在了实验功能里，�
 + 开启 OverlayScrollbar
 + 开启深色模式插件
 
-![](../img/posts/20200217/030947.jpg)
+![](/img/posts/20200217/030947.jpg)
 
 `OverlayScrollbar` 作为实验功能已经在正式版中被删除了，但是依旧有办法强制开启。
 
