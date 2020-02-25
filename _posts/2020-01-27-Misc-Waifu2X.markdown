@@ -7,6 +7,7 @@ author:     "Hsnico"
 header-img: "img/post-bg-2020.jpg"
 tags:
     - Photo
+    - Tools
 ---
 
 # Waifu2x

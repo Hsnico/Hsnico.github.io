@@ -7,9 +7,10 @@ author:     "Hsnico"
 header-img: "img/post-bg-2020.jpg"
 tags:
     - Windows
+    - Tools
 ---
 
-# 起因
+# 前言
 
 Flyme 8 的全局夜间模式太好用了，导致我不再满足 Windows 10 自带的护眼模式了。
 
