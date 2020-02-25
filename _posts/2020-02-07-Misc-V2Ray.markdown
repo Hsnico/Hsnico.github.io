@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      "V2Ray搭建"
 subtitle:   "记录一下搭建的过程"
@@ -6,6 +7,7 @@ author:     "Hsnico"
 header-img: "img/post-bg-2020.jpg"
 tags:
     - Linux
+---
 
 # 起因
 

@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      "Waifu2x"
 subtitle:   "Waifu2x版本对比"
@@ -6,6 +7,7 @@ author:     "Hsnico"
 header-img: "img/post-bg-2020.jpg"
 tags:
     - Photo
+---
 
 #Waifu2x
 Waifu2x 是使用深度卷积神经网路的图片超分辨率算法系统(大概没说错)
