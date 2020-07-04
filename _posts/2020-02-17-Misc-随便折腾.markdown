@@ -1,13 +1,13 @@
 ---
-layout:     post
-title:      "随便折腾一下"
-subtitle:   "Windows的深色模式与Chrome配置"
-date:       2020-02-07
-author:     "Hsnico"
-header-img: "img/post-bg-2020.jpg"
+layout: post
+title: '随便折腾一下'
+subtitle: 'Windows的深色模式与Chrome配置'
+date: 2020-02-07
+author: 'Hsnico'
+header-img: 'img/post-bg-2020.jpg'
 tags:
-    - Windows
-    - Tools
+  - Windows
+  - Tools
 ---
 
 # 前言
@@ -22,7 +22,7 @@ Windows 1903 之前用的一直是 Windows 10 的深色模式，因为当时并�
 
 ### 软件
 
-和我有同样想法的人果然是有的，而且还不少，找了一圈之后在 GitHub 上看到了一个叫 [Windows Auto Dark Mode][WADM] 的项目
+和我有同样想法的人果然是有的，而且还不少，找了一圈之后在 GitHub 上看到了一个叫 [Windows Auto Dark Mode][wadm] 的项目
 ![Auto Dark Mode](/img/posts/20200217/023220.jpg)
 支持中文,支持自定义时间段切换主题和壁纸,并且不占用后台，因为是用 Windows 自带的任务计划实现的
 
@@ -30,36 +30,36 @@ Windows 界面解决了,接下来要解决 Chrome 的问题了
 
 Chrome 不知从什么时候起会自动根据 Windows 的主题来启用自动深色模式了，但是仅限适配的深色模式的网站才会变成深色主题，然而绝大部分的网页都是没有适配深色模式的。
 
-Chrome 其实自带一个强制深色模式，不过藏在了实验功能里，并且打开后浏览器需要重启才能实现。不知道这个功能什么时候转正，至少已经出现好久了 [Dark Mode][CDM]，选择 enable 即可启用。
+Chrome 其实自带一个强制深色模式，不过藏在了实验功能里，并且打开后浏览器需要重启才能实现。不知道这个功能什么时候转正，至少已经出现好久了 [Dark Mode][cdm]，选择 enable 即可启用。
 
-不过好消息是 [Windows Auto Dark Mode][WADM] 的作者表示会在未来的版本中添加选项在自动开启这个实验功能
+不过好消息是 [Windows Auto Dark Mode][wadm] 的作者表示会在未来的版本中添加选项在自动开启这个实验功能
 
 在作者更新之前只能使用插件来实现 Chrome 的深色模式了
 
-这般我使用的插件是 [Dark Reader][DR] ，这款插件的体验还是很棒的，绝大部分网页都能完美适配，并且支持自定义的规则。如果你懂一些 CSS 方面的知识就可以自定义网站的样式。
+这般我使用的插件是 [Dark Reader][dr] ，这款插件的体验还是很棒的，绝大部分网页都能完美适配，并且支持自定义的规则。如果你懂一些 CSS 方面的知识就可以自定义网站的样式。
 
 ![Dark Reader](/img/posts/20200217/025053.jpg)
 
 这个插件有一个很好用选项叫 `使用系统的配色方案` ，配合 Windows Auto Dark Mode 可以很好地实现在 Windows 下到点自动切换深色模式
 
-
 ### 其他
+
 唯一一个不太满意的地方就是这个插件会替换掉浏览器滚动栏的样式，虽然没什么不好，但是他会导致我的一个启动参数被覆盖。
 
 `OverlayScrollbar` 是一个被谷歌从实验功能里删除的参数，这个功能现在变成了 ChromeOS 和 Android 独占的功能，他的作用是自动隐藏滚动条，仅在你需要的时候才会出现，并且不会占用网页的空间。
 
 图片分别对应
 
-+ 原版无修改
-+ 开启 OverlayScrollbar
-+ 开启深色模式插件
+- 原版无修改
+- 开启 OverlayScrollbar
+- 开启深色模式插件
 
 ![](/img/posts/20200217/030947.jpg)
 
 `OverlayScrollbar` 作为实验功能已经在正式版中被删除了，但是依旧有办法强制开启。
 
-在 Chrome 的快捷方式中加入启动参数 `-enable-features=OverlayScrollbar ` 即可强制开启
+在 Chrome 的快捷方式中加入启动参数 `-enable-features=OverlayScrollbar` 即可强制开启
 
-  [WADM]: https://github.com/Armin2208/Windows-Auto-Night-Mode/
-  [CDM]: chrome://flags/#enable-force-dark/
-  [DR]: https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
+[wadm]: https://github.com/Armin2208/Windows-Auto-Night-Mode/
+[cdm]: chrome://flags/#enable-force-dark/
+[dr]: https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh

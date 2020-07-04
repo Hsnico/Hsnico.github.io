@@ -1,0 +1,53 @@
+---
+layout: post
+title: '用手机给设备开代理'
+subtitle: ''
+date: 2020-07-24
+author: 'Hsnico'
+header-img: 'img/home-bg-o.jpg'
+tags:
+  - 技巧
+---
+
+偶尔会遇到一种情况，一台设备临时需要科学上网，比如说Switch，但是那台设备上并没有相应的软件。这时可以通过手机共享网络来实现科学上网。
+
+### 准备
+
+一台可以科学上网的 Android 设备（iOS 端不清楚），[Proxy Server][ps] App 创建代理。
+
+![Proxy Server](/img/posts/20200704/1.png)
+
+### 使用方法
+
+手机端开启个人热点，无线有线都可以，接收端连接网络。
+![便携式热点](/img/posts/20200704/2.png)
+
+打开 **Proxy Server** 应用，点击左上角 **Add**，添加 Proxy Server。
+
+![Add Proxy Server](/img/posts/20200704/3.png)
+
+**Sever name** 可以随便填，**Port** 可以点下面的按钮随机填写，也可以自定义，只要不填什么特殊端口就行，其他选项默认即可。
+
+![代理设置](/img/posts/20200704/4.png)
+
+设置完毕后退出界面，在弹出框选 **yes** 保存。
+
+保存后点击 **Start** 启动服务，这时手机端代理已经开启了。
+
+点击 **info** 查看本机 ip 地址，如果是移动热点一般都是 `192.168.43.1`，如果是 WLAN 共享的话就是你手机在局域网中的 ip。
+
+![手机端 ip](/img/posts/20200704/5.png)
+
+此时手机端已经配置完了，接收端代理配置选择手动代理，Windows 端位于 `设置-网络和 Internet-代理`，拉倒最底下 `手动设置代理`。其他设备配置方法大同小异，一般都能开启手动代理，详细可以自行百度。
+
+![手动代理](/img/posts/20200704/7.png)
+
+地址填刚刚在 **info** 中查到的地址，端口就是最开始在手机端设置的端口。
+
+此时所有的配置都已经完成了，不出意外接收端已经能科学上网了。
+
+![手动代理](/img/posts/20200704/6.png)
+
+注意保持 Proxy Server 在后台运行
+
+[ps]: https://play.google.com/store/apps/details?id=com.icecoldapps.proxyserver

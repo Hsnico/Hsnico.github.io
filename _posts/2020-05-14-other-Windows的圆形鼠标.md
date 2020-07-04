@@ -1,15 +1,16 @@
 ---
-layout:     post
-title:      "做了个圆形的光标"
-subtitle:   "带动画的那种"
-date:       2020-05-14
-author:     "Hsnico"
-header-img: "img/post-bg-2020.jpg"
+layout: post
+title: '做了个圆形的光标'
+subtitle: '带动画的那种'
+date: 2020-05-14
+author: 'Hsnico'
+header-img: 'img/post-bg-2020.jpg'
 tags:
-    - Tools
+  - Tools
 ---
 
 # 一个小想法
+
 看到了 iPadOS 更新到了 13.4，新的光标动画一下就爱上了
 
 ![](/img/posts/20200514/0.gif)

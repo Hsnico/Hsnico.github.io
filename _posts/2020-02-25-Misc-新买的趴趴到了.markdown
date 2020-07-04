@@ -1,16 +1,17 @@
 ---
-layout:     post
-title:      "智乃趴趴"
-subtitle:   "特殊时期的快递真的很慢"
-date:       2020-02-07
-author:     "Hsnico"
-header-img: "img/post-bg-Chino.jpg"
+layout: post
+title: '智乃趴趴'
+subtitle: '特殊时期的快递真的很慢'
+date: 2020-02-07
+author: 'Hsnico'
+header-img: 'img/post-bg-Chino.jpg'
 tags:
-    - 生活
-    - Photo
+  - 生活
+  - Photo
 ---
 
 # 前言
+
 在淘宝闲逛的时候看到的这只趴趴，看到库存 1 件的时候毫不犹豫就下单了，前前后后花了 20 天送到手上。
 
 想着差不多该把 Microsoft 的头像换一下了，之前的头像是一张手机拍的趴趴，16 年用到现在了。
