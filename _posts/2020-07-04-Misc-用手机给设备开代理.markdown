@@ -1,8 +1,8 @@
 ---
 layout: post
-title: '用手机给设备开代理'
+title: '免 root 用手机给设备开代理'
 subtitle: ''
-date: 2020-07-24
+date: 2020-07-04
 author: 'Hsnico'
 header-img: 'img/home-bg-o.jpg'
 tags:
