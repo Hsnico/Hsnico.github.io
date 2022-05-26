@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         在线学习 2.0！
 // @namespace    http://tampermonkey.net/
-// @version      2.6.0
+// @version      2.6.1
 // @description  哔哔哔
 // @author       是谁呢
 // @icon         https://www.google.com/s2/favicons?domain=jsnu.edu.cn
