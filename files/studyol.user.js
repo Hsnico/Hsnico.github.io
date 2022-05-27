@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         在线学习 2.0！
 // @namespace    http://tampermonkey.net/
-// @version      2.6.1
+// @version      2.6.3
 // @description  哔哔哔
 // @author       是谁呢
 // @icon         https://www.google.com/s2/favicons?domain=jsnu.edu.cn
 // @match        *://cgjx.jsnu.edu.cn/learnspace/learn/learn/blue/*
-// @updateURL    https://hsnico.github.io/files/studyol.meta.js
+// @updateURL       https://hsnico.github.io/files/studyol.meta.js
 // @downloadURL  https://hsnico.github.io/files/studyol.user.js
 // @grant        none
 // ==/UserScript==
@@ -17,13 +17,13 @@
   if (window.location.href.indexOf('courseware_index.action') != -1) {
     //
     let timer = setInterval(() => {
-      let className = window.localStorage.getItem('className');
+      let isChange = window.localStorage.getItem('isChange');
       let schedule = parseInt(window.localStorage.getItem('schedule'));
       if (schedule == NaN) {
         schedule = 0;
       }
       // 是否更换课程
-      if (className == $('.vtitle')[0].innerText) {
+      if (isChange != 'true' && isChange != null) {
         // 获取标题
         if (window.localStorage.getItem('theLast') == '') {
           let chapter_title = $($('[id^=childItem]')[schedule]).parent().parent().prev()[0].innerText;
@@ -35,7 +35,7 @@
         schedule = 0;
       }
 
-      jump(schedule - 1);
+      jump(schedule);
       run(schedule);
       clearInterval(timer);
     }, 10000);
@@ -44,8 +44,16 @@
     console.log('%c哔哔哔，小火车发车咯 ~ ~ ~', 'color:#42A0FB;font-weight:bold');
     console.log('%c上次看到：\n%s', 'color:#F9CA44;font-weight:bold', window.localStorage.getItem('theLast'));
   } else {
-    // 记录课程名
-    window.localStorage.setItem('className', $('.courseTit h1')[0].innerText);
+    try {
+      // 记录课程名
+      let className = window.localStorage.getItem('className');
+      if (className != $('.courseTit h1')[0].innerText) {
+        window.localStorage.setItem('isChange', 'true');
+      }
+      window.localStorage.setItem('className', $('.courseTit h1')[0].innerText);
+    } catch (error) {
+      return;
+    }
     // 30 分钟自动确定
     setInterval(() => {
       if ($('.layui-layer-btn0').length) {
